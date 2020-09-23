@@ -1,0 +1,28 @@
+{
+    "name": "legacybeta/cloudflare-firewall",
+    "type": "library",
+    "description": "A Laravel command to work with Cloudflare firewall rules.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LegacyBetaDev",
+            "email": "developers@legacybeta.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "cloudflare/sdk": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "LegacyBeta\\CloudflareFirewall\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LegacyBeta\\CloudflareFirewall\\CloudflareFirewallServiceProvider"
+            ]
+        }
+    }
+}
